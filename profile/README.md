@@ -18,15 +18,15 @@
 
 ### Latest finding
 
-**[swarm-dil](https://github.com/RoperaLabs/swarm-dil)** v0.2: 20 UAVs searching terrain with a physical radio model (range, correlated fading, line-of-sight blockage, field interference, shared channel, bounded onboard memory). Measured as the time until the command post **knows** every target: a single ridge makes central control **2.2× slower** than a mesh-coordinated swarm; losing 30 % of the UAVs **doubles** the time of a pre-planned search but costs the mesh only 9 %; and below a quarter of the map in onboard memory, greedy mesh search **collapses**.
+**[swarm-dil](https://github.com/RoperaLabs/swarm-dil)** v0.3, **GRACE**: a communication protocol derived, not copied, for agents with a vision cone, a few hundred bytes of memory and short, fading radio links that must cross unknown terrain from A to B. Each agent runs it on board, knowing only what it senses and what teammates tell it. It sends only what changes a teammate's decision: the same detour as flooding with **~3× fewer bytes**, and unlimited-memory performance with **64 bytes of map memory**, where flooding becomes worse than silence. [Technical report](https://roperalabs.github.io/swarm-dil/theory/theory.pdf) · [interactive explainer](https://roperalabs.github.io/swarm-dil/).
 
-<p align="center"><img src="https://raw.githubusercontent.com/RoperaLabs/swarm-dil/main/results/search_dil.gif" alt="Three swarm coordination strategies searching terrain with obstacles, interference and UAV losses" width="720"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/RoperaLabs/swarm-dil/main/docs/theory/fig/pareto.png" alt="Bytes sent against detour: GRACE, flooding and silence" width="560"></p>
 
 ### Open research
 
 | Project | Relevance | Stack |
 |---|---|---|
-| [swarm-dil](https://github.com/RoperaLabs/swarm-dil) | UAV swarm search over DIL links with a physical radio model, terrain, interference and memory limits: centralised, mesh and pre-planned coordination compared on time-to-C2; Cursor on Target replay for TAK | Python, NumPy |
+| [swarm-dil](https://github.com/RoperaLabs/swarm-dil) | Coordination and communication of memory- and bandwidth-limited UAV teams over degraded links: GRACE protocol with proofs and on-device simulation (v0.3); area search under a physical radio, terrain and interference (v0.2); Cursor on Target replay for TAK | Python, NumPy, SciPy, LaTeX |
 | [boids-flocking](https://github.com/RoperaLabs/boids-flocking) | Decentralised flocking model and order-disorder experiment: a baseline for UxV swarm coordination | Python, NumPy |
 | [physarum-network-design](https://github.com/RoperaLabs/physarum-network-design) | Slime-mould-inspired network design benchmarked against classical baselines: resilient, low-cost network topologies | Python |
 | [population-dynamics-evolution](https://github.com/RoperaLabs/population-dynamics-evolution) | Agent-based evolutionary simulation with multi-seed experiments: methodology for large-scale ABM studies | Python, NumPy |
