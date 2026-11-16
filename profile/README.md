@@ -18,15 +18,15 @@
 
 ### Latest finding
 
-**[swarm-dil](https://github.com/RoperaLabs/swarm-dil)**: across 3,600 simulated search missions with 20 UAVs, losing half of all messages in 10-second bursts makes a centrally coordinated swarm **3.6× slower** to find every target, while a mesh-coordinated swarm slows by only **1.16×**. Beyond 10-20 % message loss, central coordination is already slower than not communicating at all.
+**[swarm-dil](https://github.com/RoperaLabs/swarm-dil)** v0.2: 20 UAVs searching terrain with a physical radio model (range, correlated fading, line-of-sight blockage, field interference, shared channel, bounded onboard memory). Measured as the time until the command post **knows** every target: a single ridge makes central control **2.2× slower** than a mesh-coordinated swarm; losing 30 % of the UAVs **doubles** the time of a pre-planned search but costs the mesh only 9 %; and below a quarter of the map in onboard memory, greedy mesh search **collapses**.
 
-<p align="center"><img src="https://raw.githubusercontent.com/RoperaLabs/swarm-dil/main/results/search_dil.gif" alt="Three swarm coordination strategies searching an area over a degraded network" width="720"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/RoperaLabs/swarm-dil/main/results/search_dil.gif" alt="Three swarm coordination strategies searching terrain with obstacles, interference and UAV losses" width="720"></p>
 
 ### Open research
 
 | Project | Relevance | Stack |
 |---|---|---|
-| [swarm-dil](https://github.com/RoperaLabs/swarm-dil) | UAV swarm search over DIL links: centralised, decentralised and no-comms coordination compared on mission metrics; Cursor on Target replay for TAK | Python, NumPy |
+| [swarm-dil](https://github.com/RoperaLabs/swarm-dil) | UAV swarm search over DIL links with a physical radio model, terrain, interference and memory limits: centralised, mesh and pre-planned coordination compared on time-to-C2; Cursor on Target replay for TAK | Python, NumPy |
 | [boids-flocking](https://github.com/RoperaLabs/boids-flocking) | Decentralised flocking model and order-disorder experiment: a baseline for UxV swarm coordination | Python, NumPy |
 | [physarum-network-design](https://github.com/RoperaLabs/physarum-network-design) | Slime-mould-inspired network design benchmarked against classical baselines: resilient, low-cost network topologies | Python |
 | [population-dynamics-evolution](https://github.com/RoperaLabs/population-dynamics-evolution) | Agent-based evolutionary simulation with multi-seed experiments: methodology for large-scale ABM studies | Python, NumPy |
