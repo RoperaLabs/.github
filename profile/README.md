@@ -5,24 +5,34 @@
   </picture>
 </p>
 
-<p align="center"><b>Software and data science for defence and security.</b></p>
+<p align="center"><b>Software for multi-domain operations: C4ISR, autonomy and uncrewed systems.</b></p>
 
 ---
 
-**Ropera Labs** is an independent software lab building analytical and simulation tools for the defence and security domain. We focus on the hard, unglamorous parts: modelling, evaluation and decision support that stand up to scrutiny.
+**Ropera Labs** is an independent R&D lab developing software for multi-domain operations. We build the analytical core behind command and control and uncrewed systems: models, algorithms and evaluation that hold up outside the lab.
 
-### What we work on
+### Focus areas
 
-- **Modelling & simulation**: agent-based and multi-agent models for operational analysis and wargaming support
-- **Decision support**: optimisation of logistics, networks and critical-infrastructure resilience
-- **Autonomy research**: coordination and learning in multi-agent systems
-- **Test & evaluation**: rigorous statistical methods to measure whether a system actually works
+- **C4ISR & data fusion**: multi-sensor fusion, common operational picture and decision support for command and control.
+- **Uncrewed systems (UxV)**: coordination, swarming and mission planning for aerial, ground, surface and underwater vehicles.
+- **Modelling, simulation & wargaming**: agent-based and multi-agent models for concept development and operational analysis.
+- **Resilient networks & logistics**: bio-inspired and classical optimisation for communications, C2 and supply networks.
+- **Test & evaluation**: statistical methods to measure whether a system actually performs as claimed.
 
-### How we work
+### Open research
 
-- Open by default: public repositories contain only unclassified research built on openly available data.
-- Reproducible: every result ships with its data pipeline, method and evaluation.
-- Responsible: we develop defensive and analytical capabilities and operate within applicable law, including export-control regulations.
+| Project | Relevance | Stack |
+|---|---|---|
+| [boids-flocking](https://github.com/RoperaLabs/boids-flocking) | Decentralised flocking model and order-disorder experiment: a baseline for UxV swarm coordination | Python, NumPy |
+| [physarum-network-design](https://github.com/RoperaLabs/physarum-network-design) | Slime-mould-inspired network design benchmarked against classical baselines: resilient, low-cost network topologies | Python |
+| [population-dynamics-evolution](https://github.com/RoperaLabs/population-dynamics-evolution) | Agent-based evolutionary simulation with multi-seed experiments: methodology for large-scale ABM studies | Python, NumPy |
+
+### Principles
+
+- **Unclassified by design**: public repositories contain only open research built on publicly available data.
+- **Human oversight**: autonomy is built to support human decision-makers, not replace them.
+- **Compliance**: we operate within applicable law, including export-control and dual-use regulations.
+- **Reproducibility**: every result ships with its data pipeline, method and evaluation.
 
 ### Contact
 
