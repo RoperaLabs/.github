@@ -27,6 +27,7 @@
 | Project | Relevance | Stack |
 |---|---|---|
 | [swarm-dil](https://github.com/RoperaLabs/swarm-dil) | Coordination and communication of memory- and bandwidth-limited UAV teams over degraded links: GRACE protocol with proofs and on-device simulation (v0.3); area search under a physical radio, terrain and interference (v0.2); Cursor on Target replay for TAK | Python, NumPy, SciPy, LaTeX |
+| [C2-swarm-lab](https://github.com/RoperaLabs/C2-swarm-lab) | 3D virtual test range for swarm C2 algorithms: quadrotor physics with wind, noisy sensors, a DIL radio and seeded worlds, with a live web viewer. Brains get only what a real drone would measure. Hosts GRACE-3D unchanged and measures what each realism factor costs it (v0.3) | Python, NumPy, SciPy, Numba, three.js |
 | [boids-flocking](https://github.com/RoperaLabs/boids-flocking) | Decentralised flocking model and order-disorder experiment: a baseline for UxV swarm coordination | Python, NumPy |
 | [physarum-network-design](https://github.com/RoperaLabs/physarum-network-design) | Slime-mould-inspired network design benchmarked against classical baselines: resilient, low-cost network topologies | Python |
 | [population-dynamics-evolution](https://github.com/RoperaLabs/population-dynamics-evolution) | Agent-based evolutionary simulation with multi-seed experiments: methodology for large-scale ABM studies | Python, NumPy |
